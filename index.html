@@ -1,1 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte, Futuro Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <header>
+        <div class="container header-container">
+            <div class="logo">Agro<span>Sustentável</span></div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#pilares">Pilares</a></li>
+                    <li><a href="#tecnologia">Tecnologia</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <button class="btn-toggle" id="theme-toggle">🌱 Alternar Tema</button>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <h1>Agro Forte, Futuro Sustentável</h1>
+            <p>O equilíbrio perfeito entre a alta produtividade no campo e a preservação do meio ambiente. Descubra como a tecnologia e a consciência estão moldando o amanhã.</p>
+            <a href="#pilares" class="btn-primary">Saiba Mais</a>
+        </div>
+    </section>
+
+    <section id="pilares" class="sections">
+        <div class="container">
+            <h2 class="section-title">Nossos Pilares de Equilíbrio</h2>
+            <div class="grid-cards">
+                <div class="card">
+                    <h3>Produção Eficiente</h3>
+                    <p>Otimização do uso da terra através do plantio direto e rotação de culturas, garantindo recordes de safra sem a necessidade de novos desmatamentos.</p>
+                </div>
+                <div class="card">
+                    <h3>Preservação Ativa</h3>
+                    <p>Manutenção de Áreas de Preservação Permanente (APPs) e Reserva Legal, integrando florestas nativas ao cenário produtivo agrícola.</p>
+                </div>
+                <div class="card">
+                    <h3>Recursos Hídricos</h3>
+                    <p>Sistemas modernos de irrigação gota a gota e manejo inteligente da água, reduzindo o desperdício e protegendo nossos mananciais.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tecnologia" class="sections bg-light">
+        <div class="container">
+            <h2 class="section-title">Simulador de Economia Sustentável</h2>
+            <p class="section-subtitle">Descubra o impacto positivo estimado ao adotar práticas de agricultura de precisão em sua propriedade fictícia:</p>
+            
+            <div class="calculator-box">
+                <div class="form-group">
+                    <label for="hectares">Tamanho da propriedade (em hectares):</label>
+                    <input type="number" id="hectares" min="1" placeholder="Ex: 150">
+                </div>
+                <button id="btn-calcular" class="btn-primary">Calcular Impacto</button>
+
+                <div id="resultado" class="result-box hidden">
+                    <h3>Resultado Estimado por Ano:</h3>
+                    <p>💧 <strong>Água economizada:</strong> <span id="res-agua">0</span> litros.</p>
+                    <p>📉 <strong>Redução de CO₂:</strong> <span id="res-co2">0</span> kg.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="sections">
+        <div class="container">
+            <h2 class="section-title">Una-se ao Movimento</h2>
+            <form id="contact-form" class="contact-form">
+                <input type="text" id="nome" placeholder="Seu Nome" required>
+                <input type="email" id="email" placeholder="Seu E-mail" required>
+                <textarea id="mensagem" rows="5" placeholder="Como você enxerga o futuro do agro sustentável?" required></textarea>
+                <button type="submit" class="btn-primary">Enviar Mensagem</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Agro Sustentável. Desenvolvido para um futuro em equilíbrio.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
